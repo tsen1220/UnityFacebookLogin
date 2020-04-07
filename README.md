@@ -19,6 +19,8 @@ Create a script for facebook.
 Initialize the SDK first.
 
 ```
+using Facebook.Unity;
+
 	private void Awake()
 	{
 		if (!FB.IsInitialized)
