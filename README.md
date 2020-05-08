@@ -73,7 +73,7 @@ We can take the token to access server with user info.
 		FB.LogInWithReadPermissions(permissions, AuthCallback);
 	}
 
-    private void AuthCallback(ILoginResult result)
+    	private void AuthCallback(ILoginResult result)
 	{
 		if (FB.IsLoggedIn)
 		{
