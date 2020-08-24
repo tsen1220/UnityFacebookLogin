@@ -61,7 +61,6 @@ public class FBScript : MonoBehaviour
 			{
 				Debug.Log(perm);
 			}
-
 		}
 		else
 		{
@@ -75,7 +74,6 @@ public class FBScript : MonoBehaviour
 	{
 		List<string> permissions = new List<string> { "public_profile", "email" };
 		FB.LogInWithReadPermissions(permissions, AuthCallback);
-
 	}
 
 	private void FBCallApi(bool isLoggedIn)
@@ -108,6 +106,7 @@ public class FBScript : MonoBehaviour
 
 		helloMsg.text = "Hello! " + (string)result.ResultDictionary["name"];
 	}
+	
 	private void DisplayPicture(IGraphResult result)
 	{
 		if (result.Texture != null)
